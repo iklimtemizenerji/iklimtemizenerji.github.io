@@ -1,0 +1,80 @@
+.clr0 {
+   color: $clr0;
+
+   &-75 {
+      color: $clr0-75;
+   }
+
+   &-50 {
+      color: $clr0-50;
+   }
+
+   &-25 {
+      color: $clr0-25;
+   }
+}
+
+.bgClr0 {
+   background-color: $clr0;
+}
+
+
+.clr1 {
+   color: $clr1;
+
+   &-75 {
+      color: $clr1-75;
+   }
+
+   &-50 {
+      color: $clr1-50;
+   }
+
+   &-25 {
+      color: $clr1-25;
+   }
+}
+
+.bgClr1 {
+   background-color: $clr1;
+}
+
+.clr2 {
+   color: $clr2;
+
+   &-75 {
+      color: $clr2-75;
+   }
+
+   &-50 {
+      color: $clr2-50;
+   }
+
+   &-25 {
+      color: $clr2-25;
+   }
+}
+
+.bgClr2 {
+   background-color: $clr2;
+}
+
+.clr-danger {
+   color: $clr-danger;
+}
+
+.clr-submit-dark {
+   color: $clr-submit-dark;
+}
+
+.clr-submit-light {
+   color: $clr-submit-light;
+}
+
+.clr-success {
+   color: #5cb85c;
+}
+
+.clr-info {
+   color: #f0ad4e;
+}

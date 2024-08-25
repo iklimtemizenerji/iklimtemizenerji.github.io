@@ -1,0 +1,19 @@
+.dynamic {
+
+  //box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.1);
+  @media only screen and (max-width: $sm) {
+    width: 98vw;
+  }
+
+  @media only screen and (min-width: $sm) and (max-width: $md) {
+    width: 96vw;
+  }
+
+  @media only screen and (min-width: $md) and (max-width: $lg) {
+    width: 92vw;
+  }
+
+  @media only screen and (min-width: $lg) {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,12 @@
+.sektor {
+  background-color: $clr1-50;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &-name {
+    color: $clr0;
+    align-self: flex-start;
+    text-align: left;
+  }
+}

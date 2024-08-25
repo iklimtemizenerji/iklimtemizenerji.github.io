@@ -1,0 +1,139 @@
+input[type="text"],
+input[type="number"],
+select,
+textarea,
+.translateInput,
+.tagsInput {
+   background-color: $clr0-75;
+   border: 1px solid $clr0-25;
+   //min-height: 5vh;
+   min-width: 300px;
+
+   @media only screen and (min-width: $sm) {
+      max-width: 300px;
+   }
+
+   padding: 10px;
+   outline: none;
+   //text-indent: 1vh;
+   transition: all 250ms;
+
+   &:focus {
+      @extend .boxShadow-1;
+   }
+}
+
+
+textarea {
+   min-height: 200px;
+   resize: none;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inputContainer {
+   //transition: all 250ms;
+   transform: scale(0.95);
+   color: $clr0-50;
+
+   >p {
+      margin-bottom: 0.5vh;
+      width: fit-content;
+   }
+
+   >* {
+      width: 100%;
+   }
+}
+
+.inputContainer:focus-within {
+   transform: scale(1);
+
+   >p {
+      color: $clr0;
+   }
+
+   >*:nth-child(2) {
+      background-color: $clr0;
+   }
+}
+
+.translateInput {
+   display: flex;
+   padding: 0%;
+   outline: none;
+   border: none;
+   align-items: center;
+
+   >input,
+   textarea {
+      background-color: transparent;
+      border: none;
+      flex-grow: 1;
+      font-size: 1.125em;
+      padding: 10px;
+      outline: none;
+      border-right: 1px solid $clr2;
+      min-width: unset;
+
+      @media only screen and (min-width: $sm) {
+         max-width: 260px;
+      }
+   }
+
+   >button {
+      background-color: transparent;
+      font-size: 30px;
+      padding: 2px;
+      border-radius: unset;
+
+      &:hover {
+         box-shadow: none;
+         transform: scale(1.125);
+         transition: transform 500ms;
+      }
+
+      &:active {
+         transition: transform 200ms;
+         background-color: $clr1-25;
+      }
+   }
+}
+
+.tagsInput {
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+
+   >input {
+      background-color: transparent;
+      font-size: 1.125em;
+      border: none;
+      flex-grow: 1;
+      outline: none;
+      min-width: unset;
+   }
+
+
+   >.container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+
+      >.pill {
+         border-radius: 0.5vh;
+         margin: 2px;
+         padding: 2px;
+         background-color: $clr-submit-dark;
+         color: $clr0;
+         display: flex;
+
+         >button {
+            background: none;
+            border: none;
+            color: $clr1-50;
+            cursor: pointer;
+            margin-left: 3px;
+         }
+      }
+   }
+}

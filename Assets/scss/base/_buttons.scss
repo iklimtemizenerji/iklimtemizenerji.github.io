@@ -1,0 +1,89 @@
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  min-height: 5vh;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: $clr0;
+  transition: all 250ms;
+  white-space: nowrap;
+  outline: none;
+
+  &:hover {
+    box-shadow: -0px 10px 10px -5px $clr0-50;
+  }
+
+  &:has(span) {
+    min-width: 4vh;
+    justify-content: center;
+  }
+}
+
+.btn-empty {
+  @extend .btn;
+  background-color: $clr0-25;
+
+  &:hover {}
+
+  &:active {
+    background-color: $clr0-50;
+  }
+}
+
+.btn-0 {
+  @extend .btn;
+  color: $clr1-75;
+  background-color: $clr0-75;
+
+  &:hover {
+    background-color: $clr0;
+  }
+
+  &:active {
+    background-color: $clr0;
+  }
+}
+
+.btn-1 {
+  @extend .btn;
+  background-color: $clr1-50;
+
+  &:hover {
+    background-color: $clr0-50;
+  }
+
+  &:active {
+    background-color: $clr0;
+  }
+}
+
+.btn-danger {
+  @extend .btn;
+  background-color: $clr-danger-75;
+
+  &:hover {
+    background-color: $clr-danger;
+  }
+
+  &:active {
+    background-color: $clr0;
+  }
+}
+
+.btn-submit {
+  @extend .btn;
+  opacity: 0.85;
+  background-color: rgba($clr-submit-light, 0.75);
+  color: $clr1;
+
+
+  &:hover {
+    background-color: rgba($clr-submit-light, 1);
+  }
+
+  &:active {
+    background-color: $clr0;
+  }
+}

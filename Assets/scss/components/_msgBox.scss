@@ -1,0 +1,10 @@
+#popupInner {
+   min-width: 350px;
+
+   .msgBoxButtonsContainer {
+      display: flex;
+      @extend .jc-center;
+      @extend .ai-center;
+      @extend .m-1-children;
+   }
+}

@@ -1,0 +1,44 @@
+#popup {
+   height: 100vh;
+   width: 100vw;
+   z-index: 10;
+   background-color: $clr1-75;
+   position: fixed;
+   @extend .flexCenter;
+   top: 0;
+   left: 0;
+
+   #popupInner {
+      //
+      max-width: 90%;
+      max-height: 90%;
+      //
+      //min-width: 70vw;
+      //min-height: 40vh;
+      z-index: 1;
+      background-color: $clr1-75;
+      padding: 3vh;
+      @extend .boxShadow-2;
+
+      @media only screen and (max-width: $sm) {
+         >.wrap {
+
+            >*:not(button) {
+               width: 100%;
+            }
+
+            >button {
+               margin-left: auto !important;
+            }
+         }
+      }
+   }
+
+   #popupOuter {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+   }
+}

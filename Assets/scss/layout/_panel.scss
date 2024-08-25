@@ -1,0 +1,100 @@
+.panel {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+
+  background-image: linear-gradient(to bottom, $clr1-50, $clr1-25);
+  //background-color: $clr1-25;
+
+  &-menu {
+    overflow-y: auto;
+    height: 100%;
+    padding: 1vh;
+    box-shadow: 1px 1px 1px 0px $clr0-25;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    padding: 0 0.5vh;
+
+
+    >* {
+      width: 100%;
+    }
+  }
+
+  //mobile
+  @media only screen and (max-width: $sm) {
+
+    position: relative;
+
+    &-menu {
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      width: 2vh;
+      //border: 1px solid red;
+      background-color: $clr1;
+      opacity: 0.95;
+      transition: all 500ms;
+      overflow: hidden;
+
+      .handle {
+        display: block;
+        position: absolute;
+        left: -2px;
+        top: calc(50% - 2vh);
+        background-color: transparent;
+        font-size: 4vh;
+        border: none;
+        color: $clr0;
+      }
+
+      *:not(:first-child) {
+        opacity: 0;
+      }
+    }
+
+    &-menu:focus-within {
+      width: 80%;
+      z-index: 1;
+
+      *:not(:first-child) {
+        opacity: 1;
+      }
+
+      .handle {
+        opacity: 0;
+      }
+    }
+
+    &-menu:focus-within+&-content {
+      pointer-events: none;
+    }
+
+    &-content {
+      padding: 1vh 3vh 1vh 0.5vh;
+      //overflow-y: auto;
+    }
+  }
+
+  //wide-screen
+  @media only screen and (min-width: $sm) {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+
+    //
+    &-menu {
+
+      .handle {
+        display: none;
+      }
+    }
+
+    &-content {}
+  }
+}
