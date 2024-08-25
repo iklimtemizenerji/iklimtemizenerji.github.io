@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //
 let endPoint = "https://idteizlemebackend.onrender.com";
 //
-endPoint = "http://localhost:3000";
+//endPoint = "http://localhost:3000";
 //endPoint = "https://odd-pear-parrot-gown.cyclic.app/";
 
 //
