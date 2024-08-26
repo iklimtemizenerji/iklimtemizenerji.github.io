@@ -2,7 +2,7 @@
 	let loaderTemplate = /*html*/`
       <div id="loader" class="hidden">
         <!-- <div id="loader-inner"></div> -->
-				<span class="leaf">🍀</span>
+				<span class="leaf">🍃</span>
 				<p id="loader-msg"></p>
       </div>
    `;
